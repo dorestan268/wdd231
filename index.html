@@ -3,9 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I">
+    <meta name="author" content="Jean Junior Dorestan">
+    <title>WDD 231 - Web Frontend Development I - Jean Junior Dorestan</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap">
+    <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231 - Jean Junior</h1>
+
+    <!-- The Header section start -->
+    <header>
+        <div class="profil">
+            <img src="images/Dorestan.jpeg" alt="Jean Junior Dorestan">
+            <h1> Jean Junior Dorestan</h1>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger">&#9776;</span>
+                <span class="close">&times;</span>
+            </button>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li> <a href="#" target="_blank">Chamber</a></li>
+                <li><a href="#" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/signup?trk=guest_homepage-basic_nav-header-join" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- The header section end -->
+
+    <!-- The main section start -->
+    <main>
+
+        <!-- The main contains 3 sections -->
+        <section class="card">
+            <h2>Course work</h2>
+            <div class="about_me">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Haiti</h2>
+            <img src="images/blog-image-1.jpg" alt="Jean Junior Dorestan">
+            <figcaption>Le palais aux 365 portes</figcaption>
+        </section>
+
+        <section class="card1">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <!-- Name of these courses -->
+            <div class="courseName">
+                <button onclick="filterCourses('All')">All</button>
+                <button onclick="filterCourses('CSE')">CSE</button>
+                <button onclick="filterCourses('WDD')">WDD</button>
+            </div>
+            
+
+            <!-- List of courses -->
+            <div id="courseList" class="courseList">
+                <!-- Courses will be dynamically injected here -->
+            </div>
+
+            <!-- Placeholder for displaying course details -->
+            <div id="courseDetails" class="course-details"></div>
+
+            <!-- Display total required credits -->
+            <h3 id="totalCreditsRequired"></h3>
+        </section>
+    </main>
+    <!-- The main section end -->
+
+    <!-- The footer section start -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌴 Jean Junior Dorestan 🌴 Haiti</p>
+        <p id="lastModified"></p>
+    </footer>
+    <!-- The footer section end -->
+
 </body>
 </html>
