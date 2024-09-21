@@ -224,8 +224,9 @@ footer {
         padding: 10px; 
         display: flex;
     }
-
+    
     header {
+        max-width: 950px;
         margin-top: 10px; 
     }
 
