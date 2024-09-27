@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 - Web Frontend Development I">
-    <meta name="author" content="Jean Junior Dorestan">
-    <title>WDD 231 - Web Frontend Development I - Jean Junior Dorestan</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="scripts/scripts.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 231 - Web Frontend Development I">
+        <meta name="author" content="Jean Junior Dorestan">
+        <link rel="icon" href="images/favicon.ico">
+        <title>WDD 231 - Web Frontend Development I - Jean Junior Dorestan</title>
+        
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="WDD 231 - Web Frontend Development I - Jean Junior Dorestan">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://qcdc.org.qa/wp-content/uploads/2020/09/Online-courses-scaled.jpg">
+        <meta property="og:url" content="https://dorestan268.github.io/wdd231/"> 
+    
+        <!-- Google Fonts and stylesheets -->
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <!-- JavaScript file -->
+        <script src="scripts/scripts.js" defer></script>
+    </head>
+    
 <body>
 
     <!-- The Header section start -->
     <header>
         <div class="profil">
-            <img src="images/Dorestan.jpeg" alt="Jean Junior Dorestan">
+            
+            <picture>
+                <source srcset="images/Dorestan.jpeg" >
+                <img src="images/Dorestan.jpeg" alt="Jean 0pxJunior Dorestan">
+               </picture>
+
             <h1> Jean Junior Dorestan</h1>
 
             <button class="menu-toggle" aria-label="Toggle menu">
@@ -77,6 +94,8 @@
 
             <!-- Placeholder for displaying course details -->
             <div id="courseDetails" class="course-details"></div>
+
+
 
             <!-- Display total required credits -->
             <h3 id="totalCreditsRequired"></h3>
