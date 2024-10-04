@@ -1,3 +1,22 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const currentPage = window.location.pathname.split("/").pop(); // Get current file name
+  
+  // Map each page to the corresponding navigation link element
+  const links = {
+    'index.html': document.getElementById('home'),
+    'directory.html': document.getElementById('directory'),
+    'join.html': document.getElementById('join'),
+    'discover.html': document.getElementById('discover')
+  };
+
+  // Add the 'active' class to the current page's link
+  if (links[currentPage]) {
+    links[currentPage].classList.add('active');
+  }
+});
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.querySelector('.menu-toggle');
