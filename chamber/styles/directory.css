@@ -90,6 +90,22 @@ nav a {
   display: none;
 }
 
+
+.menu-toggle .close {
+  display: none;
+}
+
+.menu-toggle .hamburger {
+  display: inline;
+}
+
+
+
+nav.active {
+  display: block; 
+}
+
+
 #theme-toggle {
   background: none;
   border: none;
@@ -272,51 +288,6 @@ header h1 {
 
 
 
-.menu-toggle .close {
-  display: none; /* Hide the close icon by default */
-}
-
-.menu-toggle .hamburger {
-  display: block; /* Show the hamburger icon by default */
-}
-
-nav.active ~ .menu-toggle .hamburger {
-  display: none; /* Hide the hamburger icon when the menu is active */
-}
-
-nav.active ~ .menu-toggle .close {
-  display: block; /* Show the close icon when the menu is active */
-}
-
-
-nav ul {
-  display: none;
-  flex-direction: column;
-  background-color: black;
-  text-align: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  margin: 10px 0;
-}
-
-
-
-nav.open ul {
-  display: block;
-}
-
-.menu-toggle.open .hamburger {
-  display: none;
-}
-
-.menu-toggle.open .close {
-  display: inline;
-}    
-
 nav {
   display: none;
   flex-direction: column;
@@ -327,10 +298,25 @@ nav {
   margin: 0;
 }
 
-
 nav.active {
-  display: block; 
-  /* Other styles */
+  display: block;
+}
+
+/* Show/hide the hamburger and close buttons appropriately */
+.menu-toggle.open .hamburger {
+  display: none; 
+}
+
+.menu-toggle.open .close {
+  display: inline; 
+}
+
+nav ul {
+  display: none;
+}
+
+nav.open ul {
+  display: block;
 }
 
 #members-container {
@@ -350,9 +336,4 @@ nav.active {
 #members-container.list-view .member-card {
   display: block;
 }
-
-
-
-
 }
-

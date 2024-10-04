@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function toggleMenuButtons() {
-      menuToggle.classList.toggle('open');
+      menuToggle.classList.toggle('close');
   }
 });
 
