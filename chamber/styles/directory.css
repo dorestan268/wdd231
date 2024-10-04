@@ -240,7 +240,7 @@ header {
     margin-top: 10px; 
     padding: 10px;
     text-align: left;
-    position: relative; /* Position it absolutely within the header */
+    position: relative; 
 }
 
 
@@ -273,7 +273,7 @@ header {
 nav ul {
     display: none;
     flex-direction: column;
-    background-color: none;
+    /* background-color: none; */
     text-align: center;
     width: 100%;
     padding: 0;
@@ -299,32 +299,32 @@ nav.open ul {
 }    
 
 nav {
-  display: none; /* Hide by default */
-  flex-direction: row; /* Arrange items in a column */
-  background-color: none; /* Set background color */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  display: none; 
+  flex-direction: row; 
+  /* background-color: none; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
  
-  width: 100%; /* Full width */
-  z-index: 1000; /* Ensure it's above other content */
+  width: 100%; 
+  z-index: 1000; 
 }
 
 
 nav.active {
-  display: block; /* Show when active */
+  display: block; 
   /* Other styles */
 }
 
 #members-container {
-  display: block; /* Change from grid to block on small screens */
+  display: block; 
 }
 
 .member-card {
-  display: block; /* Ensure each card takes full width */
-  margin-bottom: 20px; /* Add space between cards */
+  display: block; 
+  margin-bottom: 20px; 
 }
 
 .member-card img {
-  width: 100%; /* Ensure images take full width */
+  width: 100%;
   height: auto;
 }
 
