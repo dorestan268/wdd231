@@ -61,6 +61,8 @@ header h1 {
   margin-right: 10px;
 }
 
+
+
 nav {
   display: flex;
   align-items: center; 
@@ -237,6 +239,7 @@ footer p {
 }
 
 header {
+  display: block;
     margin-top: 10px; 
     padding: 10px;
     text-align: left;
@@ -250,67 +253,78 @@ header h1 {
 
 
 #theme-toggle img {
-  display: block;
   background: none;
   border: none;
   cursor: pointer;
-  margin-left: 10px; 
 }
 
-  .menu-toggle {
-    display: block; 
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
+.menu-toggle {
+  display: block; 
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  margin-left: 50%;
 }
 
 
 
 .menu-toggle .close {
-    display: none;
+  display: none; /* Hide the close icon by default */
+}
+
+.menu-toggle .hamburger {
+  display: block; /* Show the hamburger icon by default */
+}
+
+nav.active ~ .menu-toggle .hamburger {
+  display: none; /* Hide the hamburger icon when the menu is active */
+}
+
+nav.active ~ .menu-toggle .close {
+  display: block; /* Show the close icon when the menu is active */
 }
 
 
 nav ul {
-    display: none;
-    flex-direction: column;
-    /* background-color: none; */
-    text-align: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  display: none;
+  flex-direction: column;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 
 
 nav.open ul {
-    display: block;
+  display: block;
 }
 
 .menu-toggle.open .hamburger {
-    display: inline;
+  display: none;
 }
 
 .menu-toggle.open .close {
-    display: inline;
+  display: inline;
 }    
 
 nav {
-  display: none; 
-  flex-direction: row; 
-  /* background-color: none; */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
- 
-  width: 100%; 
-  z-index: 1000; 
+  display: none;
+  flex-direction: column;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 
