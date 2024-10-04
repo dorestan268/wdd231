@@ -256,10 +256,10 @@ footer p {
 
 header {
   display: block;
-    margin-top: 10px; 
-    padding: 10px;
-    text-align: left;
-    position: relative; 
+  margin-top: 10px; 
+  padding: 10px;
+  text-align: left;
+  /* position: relative;  */
 }
 
 header h1 {
