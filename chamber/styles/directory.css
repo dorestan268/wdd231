@@ -138,8 +138,8 @@ main {
 
 #grid, #list {
   background-color: var(--background-color);
-  color: var(--main-bg-color);
-  padding: 0 10px;
+  color: var(--text-color);
+  padding: 5px 15px 5px 15px;
   font-family: 'Roboto Slab', slab serif;
   font-size: 18px;
   font-weight: bold;
@@ -272,7 +272,7 @@ header {
 }
 
 header h1 {
-  font-size: 7px;
+  font-size: 10px;
   font-family: 'poppins', sans-serif;
 }
 
@@ -281,6 +281,7 @@ header h1 {
   background: none;
   border: none;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 .menu-toggle {
