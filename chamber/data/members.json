@@ -1,0 +1,76 @@
+[
+  {
+    "name": "MARRIOTT HOTEL",
+    "address": "147, Ave Jean Paul II, Port-au-Prince, Haiti",
+    "phone": "+509 2814-2800",
+    "website": "https://www.marriott.com",
+    "image": "marriott.webp",
+    "membershipLevel": 3
+  },
+  {
+    "name": "DIGICEL GROUP",
+    "address": "151, Ave Jean Paul II, Port-au-Prince, Haiti",
+    "phone": "+509 3711-3444 ",
+    "website": "https://www.digicelgroup.com/",
+    "image": "digicel1.jpeg",
+    "membershipLevel": 2
+  },
+  {
+    "name": "NATCOM",
+    "address": "Angle Ave Martin Luther King et Fernand, Port-au-Prince, Haiti",
+    "phone": "+509  2222-8888",
+    "website": "https://natcom.com.ht/",
+    "image": "natcom1.png",
+    "membershipLevel": 3
+  },
+  {
+    "name": "ROYAL OASIS",
+    "address": " 115, Ave Panamericaine, Petion-Ville, Haiti",
+    "phone": "+509 2229 2030",
+    "website": "https://www.royaloasishotel.com/",
+    "image": "oasis1.png",
+    "membershipLevel": 3
+  },
+  {
+    "name": "NOVA HOME",
+    "address": "Boulevard 15 Octobre, Tabarre, Haiti",
+    "phone": "+509 2811-8568",
+    "website": "https://novahomehaiti.com/",
+    "image": "nova.jpeg",
+    "membershipLevel": 2
+  },
+  {
+    "name": "BEHRMANN MOTORS",
+    "address": "61, Blvd Toussaint Louverture, Route de l’Aéroport, Port-au-Prince, Haiti.",
+    "phone": "+509 2812-2000",
+    "website": "https://bmhaiti.com/",
+    "image": "bermann.png",
+    "membershipLevel": 1
+  },
+  {
+    "name": "KINAM HOTEL",
+    "address": "Place Saint-Pierre,Pétion-Ville, Haïti",
+    "phone": "+509 2815-8000",
+    "website": "https://hotelkinam.com/",
+    "image": "kinam.png",
+    "membershipLevel": 3
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
