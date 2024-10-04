@@ -111,6 +111,7 @@ nav.active {
   border: none;
   cursor: pointer;
   margin-left: 10px; 
+  
 }
 
 #theme-toggle img {
@@ -283,7 +284,7 @@ header h1 {
   top: 1rem;
   right: 1rem;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
 }
 
 
