@@ -4,7 +4,6 @@
 :root {
   --main-bg-color: #ffffff;
   --main-text-color: #333333;
-  --main-accent-color: #0077cc;
   --background-color: #042a2b;
   --background-color1: #004e64;
   --background-color2: #042a2b;
@@ -119,7 +118,6 @@ nav.active {
   border: none;
   cursor: pointer;
   margin-left: 10px; 
-  /* float: right; */
 }
 
 #theme-toggle {
