@@ -111,10 +111,10 @@ nav.active {
   border: none;
   cursor: pointer;
   margin-left: 10px; 
-  
+  /* float: right; */
 }
 
-#theme-toggle img {
+#theme-toggle {
   height: 25px;
 }
 
@@ -260,7 +260,7 @@ header {
   margin-top: 10px; 
   padding: 10px;
   text-align: left;
-  /* position: relative;  */
+  position: relative; 
 }
 
 header h1 {
@@ -269,7 +269,7 @@ header h1 {
 }
 
 
-#theme-toggle img {
+#theme-toggle  {
   background: none;
   border: none;
   cursor: pointer;
@@ -284,7 +284,15 @@ header h1 {
   top: 1rem;
   right: 1rem;
   cursor: pointer;
-  /* position: relative; */
+}
+
+
+.toggle-box {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 23px;
+  right: 0;
 }
 
 
