@@ -243,6 +243,11 @@ header {
     position: relative; 
 }
 
+header h1 {
+  font-size: 10px;
+  font-family: 'poppins', sans-serif;
+}
+
 
 #theme-toggle img {
   display: block;
