@@ -283,6 +283,7 @@ header h1 {
   top: 1rem;
   right: 1rem;
   cursor: pointer;
+  position: relative;
 }
 
 
