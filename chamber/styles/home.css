@@ -155,7 +155,7 @@ main {
     display: block;
 }
 
-button {
+.button {
     padding: 10px 20px;
     background-color: var(--background-color1);
     color: var(--main-bg-color);
@@ -168,7 +168,7 @@ button {
 }
 
 
-button a {
+.button a {
     color: var(--main-bg-color);
     text-decoration: none;
     font-size: 18px;
@@ -404,7 +404,7 @@ footer {
     }
   
 
-    button {
+    .button {
         padding: 10px 20px;
         background-color: var(--background-color1);
         color: var(--main-bg-color);
