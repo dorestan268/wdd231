@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 231 - Web Frontend Development I">
+        <meta name="author" content="Jean Junior Dorestan">
+        <link rel="icon" href="images/favicon.ico">
+        <title>WDD 231 - Web Frontend Development I - Jean Junior Dorestan</title>
+        
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="WDD 231 - Web Frontend Development I - Jean Junior Dorestan">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxf4lxGorOiYmU9xY340xvs7XtKaYMqxH4Mg&s">
+        <meta property="og:url" content="https://dorestan268.github.io/wdd231/chamber/directory.html"> 
+      
+        <!-- Google Fonts and stylesheets -->
+        <link rel="stylesheet" href="styles/thankyou.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        
+        <!-- JavaScript file -->
+        <script src="scripts/thankyou.js" defer></script>
+      </head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Chamber of Commerce">
+            <h1>Haiti <br> Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul class="navLinks">
+              <li><a href="index.html" id="home" class="navItem">Home</a></li>
+            </ul>
+          </nav>
+          
+        <div class="toggle-box">
+            <img id="theme-toggle" src="images/moon.png" alt="">
+            
+         <button class="menu-toggle" aria-label="Toggle menu">
+             <span class="hamburger">&#9776;</span>
+             <span class="close">&times;</span>
+         </button>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="thankyou-container"></div>
+        
+            <h1>Thank you for your application</h1>
+            <p>We express gratitud for requesting your application.</p>
+        
+
+        
+            <table>
+              <tr>
+                <th>Field</th>
+                <th>Value</th>
+              </tr>
+              <tr>
+                <td>First Name:</td>
+                <td id="firstName">N/A</td>
+              </tr>
+              <tr>
+                <td>Last Name:</td>
+                <td id="lastName">N/A</td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td id="email">N/A</td>
+              </tr>
+              <tr>
+                <td>Mobile Number:</td>
+                <td id="phone">N/A</td>
+              </tr>
+              <tr>
+                <td>Business Name:</td>
+                <td id="organization">N/A</td>
+              </tr>
+              <tr>
+                <td>Submission Date:</td>
+                <td id="timestamp">N/A</td>
+              </tr>
+            </table>
+          </div>
+
+        <section>
+            <p>We will review your application and contact you soon.</p>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-info">
+            <h1>Haiti Chamber of Commerce</h1>
+            <p>151, angle avenue Jean-Paul II et impasse Duverger, Turgeau</p>
+            <p>3651-1616</p>
+        </div>
+    
+        <div class="footer-icons">
+            <img src="images/youtube.png" alt="youtube" class="social-icon">
+            <img src="images/twitter.png" alt="twitter" class="social-icon">
+            <img src="images/linkedin.png" alt="linkedin" class="social-icon">
+        </div>
+    
+        <div class="footer-meta">
+            <p>&copy; <span id="currentyear"></span> 🌴 Jean Junior Dorestan 🌴 Haiti</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+   
+    
+</body>
+</html>
