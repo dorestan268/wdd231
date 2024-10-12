@@ -67,41 +67,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-    
-
     function getQueryParams() {
-        const params = new URLSearchParams(window.location.search);
-        return {
-          firstName: params.get('firstName'),
-          lastName: params.get('lastName'),
-          email: params.get('email'),
-          phone: params.get('phone'),
-          organization: params.get('organization'),
-          timestamp: params.get('timestamp')
-        };
-      }
-  
-      function displaySubmittedData() {
-        const formData = getQueryParams();
-  
-        document.getElementById('firstName').textContent = formData.firstName || 'N/A';
-        document.getElementById('lastName').textContent = formData.lastName || 'N/A';
-        document.getElementById('email').textContent = formData.email || 'N/A';
-        document.getElementById('phone').textContent = formData.phone || 'N/A';
-        document.getElementById('organization').textContent = formData.organization || 'N/A';
-  
-        const timestamp = formData.timestamp;
-        if (timestamp) {
-          const date = new Date(timestamp);
-          document.getElementById('timestamp').textContent = date.toLocaleString();
-        } else {
-          document.getElementById('timestamp').textContent = 'N/A';
-        }
-      }
-  
-      document.addEventListener('DOMContentLoaded', displaySubmittedData);
-    
+      const params = new URLSearchParams(window.location.search);
+      return {
+        firstName: params.get('firstName'),
+        lastName: params.get('lastName'),
+        email: params.get('email'),
+        phone: params.get('phone'),
+        organization: params.get('organization'),
+        timestamp: params.get('timestamp')
+      };
+    }
 
+    function displaySubmittedData() {
+      const formData = getQueryParams();
+
+      document.getElementById('firstName').textContent = formData.firstName ||'N/A'
+      document.getElementById('lastName').textContent = formData.lastName ||'N/A'
+      document.getElementById('email').textContent = formData.email ||'N/A'
+      document.getElementById('phone').textContent = formData.phone ||'N/A'
+      document.getElementById('organization').textContent = formData.organization ||'N/A'
+      document.getElementById('timestamp').textContent = formData.timestamp ||'N/A'
+    }
+
+    document.addEventListener('DOMContentLoaded', displaySubmittedData);
 
