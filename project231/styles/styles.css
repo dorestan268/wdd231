@@ -605,10 +605,26 @@ table td {
 
     /* Spotlight section styling */
     .member-spotlight {
-        flex-wrap: wrap;
-        width: 80%; /* Ensure images in spotlight also scale to card size */
-        height: auto;
-        margin-bottom: 5px;
-      }    
+      flex-wrap: wrap;
+      width: 80%; /* Ensure images in spotlight also scale to card size */
+      height: auto;
+      margin-bottom: 5px;
+    }    
+
+    .gridContainer {
+      grid-template-columns: 1fr;
+      text-align: center;
+      width: 70%;
+      padding: 10px;
+      margin-left: 10px;
+  }
+
+  .imageGrid {
+      grid-template-columns: 1fr;
+  }
+
+  .gallery, .sidebar {
+      text-align: center;
+  }   
    }
   
