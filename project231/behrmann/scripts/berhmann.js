@@ -11,6 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
         menuToggle.classList.toggle('close');
     }
   });
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const currentPage = window.location.pathname.split("/").pop();
+    const links = {
+      'behrmann.html': document.getElementById('home'),
+      'about.hmtl': document.getElementById('directory'),
+      'join.html': document.getElementById('join'),
+      'discover.html': document.getElementById('discover')
+    };
+  
+    if (links[currentPage]) {
+      links[currentPage].classList.add('active');
+    }
+  });
   
   
   document.addEventListener('DOMContentLoaded', () => {
@@ -317,8 +332,6 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="product-rating">${product.rating} (${product.reviews})</div>
         <div class="product-price">
           <span class="discount-price">${selectedColor.price}</span>
-          <span class="old-price">${product.oldPrice}</span>
-          <span class="discount">${product.discount}</span>
         </div>
       
         <p class="product-description">${product.description}</p>

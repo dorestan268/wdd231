@@ -12,6 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+  
+document.addEventListener('DOMContentLoaded', () => {
+  const currentPage = window.location.pathname.split("/").pop();
+  const links = {
+    'thompson.html': document.getElementById('home'),
+    'about.hmtl': document.getElementById('directory'),
+    'join.html': document.getElementById('join'),
+    'discover.html': document.getElementById('discover')
+  };
+
+  if (links[currentPage]) {
+    links[currentPage].classList.add('active');
+  }
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const themeToggleButton = document.getElementById('theme-toggle');
@@ -57,7 +72,6 @@ const products = {
   1: {
     name: "iPhone 14",
     basePrice: "899.99€",
-    oldPrice: "999.99€",
     discount: "-10%",
     rating: "★★★★☆",
     reviews: "1,200 reviews",
@@ -325,8 +339,8 @@ Object.keys(products).forEach((productId) => {
       <div class="product-rating">${product.rating} (${product.reviews})</div>
       <div class="product-price">
         <span class="discount-price">${selectedColor.price}</span>
-        <span class="old-price">${product.oldPrice}</span>
-        <span class="discount">${product.discount}</span>
+        
+       
       </div>
     
       <p class="product-description">${product.description}</p>
