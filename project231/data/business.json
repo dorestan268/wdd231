@@ -1,0 +1,63 @@
+[
+    {
+        "name": "THOMPSON",
+        "address": "71 Clerveau, Petion-Ville",
+        "phone": "(+509) 29 48 2121",
+        "image": "thompson.png",
+        "membershipLevel": 3,
+        "pageLink": "thompson/thompson.html"
+      },      
+    {
+      "name": "POLARIS",
+      "address": "151, Ave Jean Paul II, Port-au-Prince, Haiti",
+      "phone": "+509 3711-3444 ",
+      "image": "Polaris-logo.png",
+      "membershipLevel": 2,
+      "pageLink": "polaris/polaris.html"
+    },
+    {
+      "name": "LUMINESCENCE",
+      "address": "Angle Ave Martin Luther King et Fernand, Port-au-Prince, Haiti",
+      "phone": "+509  2222-8888",
+      "image": "Luminescence_logo.png",
+      "membershipLevel": 3,
+      "pageLink": "luminescence/luminescence.html"
+    },
+    {
+      "name": "NOVA HOME",
+      "address": "Boulevard 15 Octobre, Tabarre, Haiti",
+      "phone": "+509 2811-8568",
+      "website": "https://novahomehaiti.com/",
+      "image": "nova.jpeg",
+      "membershipLevel": 2,
+      "pageLink": "nova/nova.html"
+    },
+    {
+      "name": "BEHRMANN MOTORS",
+      "address": "61, Blvd Toussaint Louverture, Route de l'Aéroport, Port-au-Prince, Haiti",
+      "phone": "+509 2812-2000",
+      "website": "https://bmhaiti.com/",
+      "image": "behrmann.png",
+      "membershipLevel": 1,
+      "pageLink": "behrmann/behrmann.html"
+    }
+  ]
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

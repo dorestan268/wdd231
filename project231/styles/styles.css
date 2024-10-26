@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Light theme (default) */
+:root {
+  --main-bg-color: #ffffff;
+  --main-text-color: #333333;
+  --background-color: #042a2b;
+  --background-color1: #004e64;
+  --background-color2: #042a2b;
+  --text-color: white;
+  --accent1-color: #AAD8D3;
+  --nav-hover-link-color: var(--accent1-color);
+  --nav-hover-background-color: var(--secondary-color);
+}
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+
+/* Dark theme styles */
+body.dark-theme {
+  --main-bg-color: #1f1f1f;
+  --main-text-color: #f5f5f5;
+  --main-accent-color: yellow;
+}
+
+
+
+header {
+  margin-top: 20px;
+  /* background-color: var(--background-color); */
+  color: var(--text-color);
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+}
+
+
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: var(--background-color1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+    color: var(--background-color);
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+
+
+nav {
+  display: flex;
+  align-items: center; 
+  margin-left: 50%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--background-color2);
+  font-family: "Akaya Kanadaka", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Active link styling */
+.navLinks .navItem.active {
+  color: var(--background-color); 
+  border-bottom: 2px solid var(--background-color1); 
+}
+
+
+
+.menu-toggle {
+  display: none;
+}
+
+
+.menu-toggle .close {
+  display: none;
+}
+
+.menu-toggle .hamburger {
+  display: inline;
+}
+
+
+
+nav.active {
+  display: block; 
+}
+
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px; 
+}
+
+#theme-toggle {
+  height: 25px;
+}
+
+
+  /* The main section */
+
+  main {
+    padding: 1rem;
+  }
+  
+  .menu {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  
+  
+  
+  .hero {
+      display: flex;
+  }
+  
+  .hero img {
+      width: 100%;
+      height: 35rem;
+      display: block;
+  }
+  
+  .button {
+      padding: 20px 30px;
+      background-color: var(--background-color1);
+      border: none;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 15%;
+      right: 65%;
+      cursor: pointer;
+  }
+  
+  
+  .button a {
+      color: var(--main-bg-color);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: 'Roboto Slab', slab serif;
+  }
+  
+  .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+  }
+  
+  .container div {
+      flex: 1;
+      margin: 10px;
+      padding: 15px;
+      background-color: aliceblue;
+      border-radius: 15px;
+  }
+  
+  .container h2 {
+      background-color: var(--background-color);
+      color: white;
+      padding: 5px;
+      margin-top: -10px;
+      text-align: center;
+      border-radius: 15px;
+  }
+  
+  .container p {
+      font-size: 16px;
+      height: .1px;
+  }
+  
+  .weather-icon {
+      width: 50px;
+      height: 50px;
+  }
+  
+  .current-weather, .forecast {
+      text-align: center;
+      height: 300px;
+  }
+  
+  .current-weather img {
+      width: 30px;
+      height: 30px;
+  }
+  
+  .events {
+      height: 300px;
+  
+  }
+  
+  .forecast p strong {
+      font-size: 18px;
+      color: black;
+  }
+  
+  
+  .current-weather p:nth-of-type(2) {
+      font-weight: bold;
+  }
+  
+  
+  #members-container {
+      display: flex;
+      justify-content: space-around;
+      padding-left: 20px;
+  }
+  
+  .member-spotlight {
+      margin-left: 10px;
+      padding: 20px;
+      width: 30%;
+      border: 1px solid #ccc;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .member-spotlight img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      border-bottom: 2px solid var(--background-color);
+  }
+  
+  .member-spotlight h3 {
+      margin: 10px 0;
+      font-size: 18px;
+  }
+  
+  .member-spotlight a {
+      color: blue;
+  }
+
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #eee;
+    color: var(--background-color2);
+    flex-wrap: wrap;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .footer-info {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  
+  
+  .footer-info h1 {
+    font-size: 18px;
+  }
+  
+  
+  
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-meta {
+    font-size: 15px;
+    flex: 1;
+    min-width: 250px;
+    text-align: right;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+
+
+
+
+  
+  /* Discover CSS start */
+  .gridContainer {
+    margin-left: 180px;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px gray;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.calendar {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 5px;
+}
+
+.gallery {
+    padding: 0;
+}
+
+.gallery h2 {
+    padding: 0;
+    text-align: center;
+}
+
+.imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.imageItem {
+    position: relative;
+    text-align: center;
+}
+
+.imageGrid img {
+    width: 230px;
+    height: 200px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.imageGrid img:hover {
+    transform: scale(1.05);
+}
+
+.imageItem p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.dark-mode .gallery h2,
+.dark-mode .gallery p {
+    color: white;
+}
+
+  /* Discover CSS end */
+
+  .subscribe-container {
+    margin: 20px 0 10px 40px;
+    background: linear-gradient(135deg, #eee, #ddd1dd);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    float: right;
+}
+.subscribe-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+.subscribe-container p {
+    margin-bottom: 20px;
+    color: black;
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-group label {
+    font-size: 0.9rem;
+    color: #333;
+}
+.form-group input[type="text"], 
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.form-group input[type="submit"] {
+    background-color: var(--background-color2);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+.form-group input[type="submit"]:hover {
+    background-color: var(--background-color1);
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Media query for devices with a max-width of 768px */
+@media (max-width: 768px) {
+
+    body {
+      padding: 10px; 
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+    }
+  
+    header {
+      display: block;
+      margin-top: 10px; 
+      padding: 10px;
+      text-align: left;
+      position: relative; 
+    }
+  
+    header h1 {
+      font-size: 10px;
+      font-family: 'poppins', sans-serif;
+    }
+
+    .logo img {
+      width: 20%;
+      height: 15%;
+    }
+  
+    #theme-toggle  {
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-left: 15px;
+    }
+  
+    .menu-toggle {
+      display: block; 
+      background: none;
+      border: none;
+      color: var(--background-color2);
+      font-size: 2rem;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+    }
+  
+    .toggle-box {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 23px;
+      right: 0;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  
+    nav.active {
+      display: block;
+    }
+  
+    /* Show/hide the hamburger and close buttons appropriately */
+    .menu-toggle.open .hamburger {
+      display: none; 
+    }
+  
+    .menu-toggle.open .close {
+      display: inline; 
+    }
+
+    .hero img {
+      width: 100%;
+      height: 15rem;
+      display: block;
+      border-radius: 5px;
+      box-shadow: #333333;
+  }
+  
+    nav ul {
+      display: none;
+    }
+  
+    nav.open ul {
+      display: block;
+    }
+  
+
+    .button {
+        padding: 5px 10px;
+        background-color: var(--background-color1);
+        color: var(--main-bg-color);
+        border: none;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 63%;
+        right: 50%;
+        cursor: pointer;
+    }
+
+    .button a {
+      font-size: 12px;
+      font-family: "Akaya Kanadaka", system-ui;
+    }
+
+    .container {
+        display: block;
+    }
+
+
+
+    #members-container {
+        display: block;
+    }
+
+
+    /* Spotlight section styling */
+    .member-spotlight {
+        flex-wrap: wrap;
+        width: 80%; /* Ensure images in spotlight also scale to card size */
+        height: auto;
+        margin-bottom: 5px;
+      }    
+   }
+  

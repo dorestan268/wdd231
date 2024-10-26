@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 231 - Web Frontend Development I">
+        <meta name="author" content="Jean Junior Dorestan">
+        <link rel="icon" href="images/favicon.ico">
+        <title>Junior's plaza Join</title>
+        
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="WDD 231 - Web Frontend Development I - Jean Junior Dorestan">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxf4lxGorOiYmU9xY340xvs7XtKaYMqxH4Mg&s">
+        <meta property="og:url" content="https://dorestan268.github.io/wdd231/chamber/directory.html"> 
+      
+        <!-- Google Fonts and stylesheets -->
+        <link rel="stylesheet" href="styles/join.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        
+        <!-- JavaScript file -->
+        <script src="scripts/join.js" defer></script>
+      </head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/hero.png" alt="Logo Chamber of Commerce">
+            <h1> <span>JUNIOR'S</span> PLAZA</h1>
+            
+         
+        </div>
+        <nav>
+            <ul class="navLinks">
+              <li><a href="index.html" id="home" class="navItem">Home</a></li>
+              <li><a href="directory.html" id="directory" class="navItem">Directory</a></li>
+              <li><a href="join.html" id="join" class="navItem">Join</a></li>
+              <li><a href="discover.html" id="discover" class="navItem">Discover</a></li>
+            </ul>
+          </nav>
+          
+        <div class="toggle-box">
+            <img id="theme-toggle" src="images/moon.png" alt="">
+            
+         <button class="menu-toggle" aria-label="Toggle menu">
+             <span class="hamburger">&#9776;</span>
+             <span class="close">&times;</span>
+         </button>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <div class="container">
+            <form action="thankyou.html" method="get" class="memberForm">
+
+                <h2>Application Form</h2>
+
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name" placeholder="DORESTAN" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name" placeholder="Jean Junior" required>
+
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" title="Title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" title="Email" autocomplete="email" placeholder="example@gmail.com" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" title="Phone" autocomplete="tel" placeholder="123456789" required>
+
+                <label for="organization">Organization</label>
+                <input type="text" id="organization" name="organization" title="Organization" autocomplete="organization" placeholder="Name of organization" required>
+
+                <label for="description">Description</label>
+                <textarea name="description" id="description" title="Organization Description"></textarea>
+
+               <input type="hidden" name="timestamp" id="timestamp" value="">
+               <label><button type="submit">Apply for Membership</button></label>
+            </form>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="footer-info">
+            <h1>JUNIOR'S PLAZA</h1>
+            <p>#10, route de Delmas, HAITI</p>
+            <p>46357484</p>
+        </div>
+    
+        <div class="footer-icons">
+            <img src="images/youtube.png" alt="youtube" class="social-icon">
+            <img src="images/twitter.png" alt="twitter" class="social-icon">
+            <img src="images/linkedin.png" alt="linkedin" class="social-icon">
+        </div>
+    
+        <div class="footer-meta">
+            <p>&copy; <span id="currentyear"></span> 🌴 Jean Junior Dorestan 🌴 Haiti</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
