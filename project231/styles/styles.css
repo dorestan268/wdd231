@@ -375,7 +375,7 @@ table td {
 .imageGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+    gap: 50px;
 }
 
 .imageItem {
@@ -385,7 +385,7 @@ table td {
 
 .imageGrid img {
     width: 230px;
-    height: 200px;
+    height: 120px;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
